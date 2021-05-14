@@ -6,7 +6,7 @@
 
 ## Deployment
 
-- [Pull 1](https://github.com/Vektur/caps-phase-2-socket-hub/pull/1)
+- [Pull 1](https://github.com/Vektur/resty/pull/2)
 
 ## Setup
 
