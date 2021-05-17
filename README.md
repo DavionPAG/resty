@@ -6,7 +6,7 @@
 
 ## Deployment/Intregations
 
-- [Pull 1](https://github.com/Vektur/resty/pull/2)
+- [PR](https://github.com/Vektur/resty/pull/3)
 
 ## Setup
 
