@@ -1,10 +1,10 @@
-# Lab 26 ==> resty
+# Lab 26 ==> RESTy
 
 ## Authur
 
 - Davion Garcia
 
-## Deployment
+## Deployment/Intregations
 
 - [Pull 1](https://github.com/Vektur/resty/pull/2)
 
@@ -22,4 +22,4 @@
 
 ## UML
 
-![UML-Lab26](uml26.jpg)
+![UML-Lab26](uml-lab-26.jpg)
