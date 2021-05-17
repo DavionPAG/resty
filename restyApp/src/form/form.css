@@ -1,0 +1,47 @@
+body {
+    font-size: 15px;
+    background-color: rgb(222, 229, 238);
+  }
+  
+  div {
+    margin: 2rem;
+  }
+
+  input {
+    padding: 5px
+  }
+  
+  label {
+    margin: 1rem;
+  }
+  
+  input[type='radio'], input[type='checkbox'] {
+    display: none;
+  }
+  
+  label span {
+    border: 1px solid lightskyblue;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+  }
+  
+  input[type="radio"]:checked + span {
+    background: silver;
+  }
+  
+  #display-box {
+    height: 80%;
+    width: 80%;
+    background-color: lightgray;
+    padding: 1rem;
+    border: inset lightskyblue 2px;
+  }
+
+  button {
+    padding: 5px;
+  }
+
+  /* form {
+    margin-top: auto;
+  } */
