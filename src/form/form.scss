@@ -30,7 +30,8 @@ body {
     background: silver;
   }
   
-  #display-box {
+  textarea {
+    margin-left: auto;
     height: 80%;
     width: 80%;
     background-color: lightgray;
@@ -42,6 +43,6 @@ body {
     padding: 5px;
   }
 
-  /* form {
+   form {
     margin-top: auto;
-  } */
+  }
