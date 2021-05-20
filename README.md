@@ -6,7 +6,7 @@
 
 ## Deployment/Intregations
 
-- [PR](https://github.com/Vektur/resty/pull/3)
+- [PR Lab 26](https://github.com/Vektur/resty/pull/3)
 
 ## Setup
 
