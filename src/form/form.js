@@ -1,5 +1,5 @@
 import React from 'react';
-import './form.css'
+import './form.scss'
 
 class Form extends React.Component {
 
@@ -8,13 +8,13 @@ class Form extends React.Component {
         this.state = {
             request: '',
             method: '',
-            url: '',  
+            url: '',
         }
     }
 
     handleSubmit = e => {
         e.preventDefault();
-        
+
         this.setState({ ...this.state, request: `${this.state.method}:   ${this.state.url}` });
     }
 
@@ -22,7 +22,7 @@ class Form extends React.Component {
         let name = e.target.name;
         let value = e.target.value;
         this.setState({ ...this.state.request, [name]: value })
-       
+
     }
 
     render() {
@@ -31,10 +31,10 @@ class Form extends React.Component {
             <>
                 <div>
                     <form onSubmit={this.handleSubmit}>
-                        
-                            <span> URL: </span>
-                            <input onChange={this.handleInput} type="text" name="url" />
-                        
+
+                        <span> URL: </span>
+                        <input onChange={this.handleInput} type="text" name="url" />
+
 
                         <button id='button'>Submit</button>
                         <br />
@@ -62,9 +62,11 @@ class Form extends React.Component {
                     </form>
                 </div>
 
-                <div id='display-box'>
+
+                <textarea name="" id="" cols="90%" rows="80%">
                     {`${this.state.request}`}
-                </div>
+                </textarea>
+
             </>
         )
     }
