@@ -1,48 +1,39 @@
 body {
-    font-size: 15px;
-    background-color: rgb(222, 229, 238);
-  }
-  
-  div {
-    margin: 2rem;
-  }
+  background-color: rgb(222, 229, 238);
+}
 
-  input {
-    padding: 5px
-  }
-  
-  label {
-    margin: 1rem;
-  }
-  
-  input[type='radio'], input[type='checkbox'] {
-    display: none;
-  }
-  
-  label span {
-    border: 1px solid lightskyblue;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 10px;
-  }
-  
-  input[type="radio"]:checked + span {
-    background: silver;
-  }
-  
-  textarea {
-    margin-left: auto;
-    height: 80%;
-    width: 80%;
-    background-color: lightgray;
-    padding: 1rem;
-    border: inset lightskyblue 2px;
-  }
 
-  button {
-    padding: 5px;
-  }
+input {
+  padding: 5px;
+}
 
-   form {
-    margin-top: auto;
-  }
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  border: 1px solid lightskyblue;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px 10px 5px 5px;
+}
+
+input[type="radio"]:checked + span {
+  background: silver;
+}
+
+button {
+  padding: 5px;
+}
+
+form {
+  margin: auto;
+  text-align: center;
+}
+
+textarea {
+  margin-top: 10px;
+  height: 10rem;
+  width: 10rem;
+}
