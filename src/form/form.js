@@ -3,73 +3,70 @@ import './form.scss'
 
 class Form extends React.Component {
 
-    constructor(props) {
-        super(props)
-        this.state = {
-            request: '',
-            method: '',
-            url: '',
-        }
+	constructor(props) {
+		super(props)
+		this.state = {}
+	}
+	
+	handleInput = e => {
+		let name = e.target.name;
+		let value = e.target.value;
+		this.setState({ ...this.state.request, [name]: value })
+
+	}
+
+	handleSubmit = e => {
+		e.preventDefault();
+
+		if( this.state.url && this.state.method) {
+      this.props.apiCall(this.state)
     }
+	}
 
-    handleSubmit = e => {
-        e.preventDefault();
+	render() {
+		return (
 
-        this.setState({ ...this.state, request: `${this.state.method}:   ${this.state.url}` });
-    }
+			<>
+				<div>
+					<form onSubmit={this.handleSubmit}>
 
-    handleInput = e => {
-        let name = e.target.name;
-        let value = e.target.value;
-        this.setState({ ...this.state.request, [name]: value })
-
-    }
-
-    render() {
-        return (
-
-            <>
-                <div>
-                    <form onSubmit={this.handleSubmit}>
-
-                        <span> URL: </span>
-                        <input onChange={this.handleInput} type="text" name="url" />
+						<span> URL: </span>
+						<input onChange={this.handleInput} type="text" name="url" />
 
 
-                        <button id='button'>Submit</button>
-                        <br />
+						<button id='button'>Submit</button>
+						<br />
 
-                        <label>
-                            <input onChange={this.handleInput} name='method' type='radio' value='GET' />
-                            <span>Get</span>
-                        </label>
+						<label>
+							<input onChange={this.handleInput} name='method' type='radio' value='get' />
+							<span>Get</span>
+						</label>
 
-                        <label>
-                            <input onChange={this.handleInput} name='method' type='radio' value='POST' />
-                            <span>Post</span>
-                        </label>
+						<label>
+							<input onChange={this.handleInput} name='method' type='radio' value='post' />
+							<span>Post</span>
+						</label>
 
-                        <label>
-                            <input onChange={this.handleInput} name='method' type='radio' value='PUT' />
-                            <span>Put</span>
-                        </label>
+						<label>
+							<input onChange={this.handleInput} name='method' type='radio' value='put' />
+							<span>Put</span>
+						</label>
 
-                        <label>
-                            <input onChange={this.handleInput} name='method' type='radio' value='DELETE' />
-                            <span>Delete</span>
-                        </label>
+						<label>
+							<input onChange={this.handleInput} name='method' type='radio' value='delete' />
+							<span>Delete</span>
+						</label>
 
-                    </form>
-                </div>
+						<textarea name="" id="" placeholder="Type Something">
 
+            </textarea>
 
-                <textarea name="" id="" cols="90%" rows="80%">
-                    {`${this.state.request}`}
-                </textarea>
+					</form>
+				</div>
 
-            </>
-        )
-    }
+			</>
+		)
+	}
 
 }
 

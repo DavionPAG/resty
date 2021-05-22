@@ -22,4 +22,4 @@
 
 ## UML
 
-![UML-Lab26](uml-lab-26.jpg)
+![UML-Lab27](uml-lab-27.jpg)
